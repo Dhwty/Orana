@@ -1,5 +1,5 @@
 {
-	"serverID":"Put the ID of the server you're running this in (right-click, copy ID)",
+	"guildId":"Put the ID of the server you're running this in (right-click, copy ID)",
 	"serverName":"Name of the server",
 	"embedIcon":"URL of either the server icon or the bot avatar, for embed footers",
 
