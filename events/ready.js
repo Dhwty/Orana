@@ -1,6 +1,6 @@
 const { ActivityType } = require('discord.js');
 const momentTZ = require('moment-timezone');
-const { serverID, moTZ, channelAnnounce, partyName, partyDate } = require('../config.json');
+const { moTZ, channelAnnounce, partyName, partyDate } = require('../config.json');
 
 //Set party time
 const parts = partyDate.split(',');
