@@ -1,0 +1,32 @@
+{
+	"serverID":"Put the ID of the server you're running this in (right-click, copy ID)",
+	"serverName":"Name of the server",
+	"embedIcon":"URL of either the server icon or the bot avatar, for embed footers",
+
+	"channelMagisterium":"Inner circle channel ID (right-click, copy ID)",
+	"channelAnnounce":"Announcement channel ID (right-click, copy ID)",
+	"channelPartyhard":"Special event channel ID (right-click, copy ID)",
+	"channelAdmin":"Admin only channel ID (right-click, copy ID)",
+
+	"roleGeneric":"The Hoi Polloi role ID",
+	"roleGuests":"Party guest role ID",
+	"rolePatrons":"Patreon patron role ID",
+	"roleRegulars":"Inner circle role ID",
+	"roleModerators":"",
+	"roleAdmins":"Administrator role ID",
+
+# BEGIN remove polls
+# polls.js command will not work without all three of these, but you may wish to remove both this section and the command file, as it's unlikely you'll need them
+	"poll":"url to a poll",
+    "lorddog":"url to a guestbook/askbox",
+    "catte":"what sort of cat photos people want to see this month",
+# END remove polls
+
+	"rulesLink":"URL to the server's rules",
+	"channelsLink":"URL to the server's channels list",
+	"helpLink":"URL to the server's bot help",
+
+	"partyName":"Give the party a title",
+	"moTZ":"Time Zone of the server's events (Continent/City)",
+	"partyTime":"Year,Month,Day,Hour,Minute,Second"
+}
