@@ -41,6 +41,10 @@ I'm going to assume you can actually get her installed, because Node and I... *s
 
 Note that if you change anything in `config.json`, like the next party date, you will need to restart the bot. To do this, either CTRL-C at the console, or `/shutdown` in a channel (Admin permissions only), and then `node bot.js` again.
 
+## Running the Bot As a Service
+This dude knows what he's doing, and his directions work perfectly.
+[Running a Node.js application using nvm as a systemd service](https://gist.github.com/joepie91/73ce30dd258296bd24af23e9c5f761aa)
+
 ## Stupid Problems
 * cron isn't implemented in this version, yet, so she can't autostart parties or announce how much time is left.
 * She's full of hardcoded references to the Kirkwall Gazette. I'm pretty sure I haven't found all of them, yet, but they'll change to `serverName`.
