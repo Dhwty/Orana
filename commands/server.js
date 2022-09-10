@@ -5,6 +5,7 @@ module.exports = {
 		.setName('server')
 		.setDescription('Display info about this server.'),
 	async execute(interaction) {
-		return interaction.reply(`Server name: ${interaction.guild.name}\nTotal members: ${interaction.guild.memberCount}`);
+		const rolelist = interaction.guild.roles.cache.map(r => r.name).join(', ');
+		return interaction.reply(`\n**Server name:** ${interaction.guild.name}\n**Server ID:** ${interaction.guild.id}\n**Server Roles:**  ` + rolelist + `\n**Total members:** ${interaction.guild.memberCount}`);
 	},
 };
