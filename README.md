@@ -3,10 +3,10 @@ A bot for Discord servers doing events with time constraints and guests. Uses Di
 
 ## What she does:
 Orana is designed to host parties.
-* ~~She'll assign a guest role to all people who join the server.~~
+* ~~She can assign a guest role to all people who join the server, that will allow interaction only during parties, in the party channel.~~
 * When you `/open` or `/close` the party room, a text chat, she'll allow or disallow the roles of your choice from entering.
-* She can set the topic in the Announcements channel to the date and time of the next party.
-* ~~She can announce how much time is left in a party, and when the party is over.~~
+* She'll set the topic in the Announcements channel to the date and time of the next party.
+* She will announce how much time is left in a party, and when the party is over.
 * She can post links to new Jackbox games in the Announcements channel (but you'll have to clean them up when the game's done)
 * She has options for dice rolling with `/roll`, including a verbose command `/vroll`.
 * On connect, she sets her status to one of six random Kirkwall-themed actions.
@@ -27,8 +27,9 @@ I'm going to assume you can actually get her installed, because Node and I... *s
 	* URLs for the server's rules, channels list, and bot command help. (These can all be the same link, or you can remove the commands you don't want to use.)
 	* The ID numbers of your Announcements, General Chat, Party, and Admin channels. (Right-click, 'Copy ID'.)
 	* The ID numbers of your Guest, Patron (if you use Patreon and its bot), Inner Circle (if any), and regular member roles. (Set roles so they can be mentioned, then `\@rolename`.)
-	* The name of your timezone. (By default, Orana will use `America/New York`.)
-	* The date for the next party in `Y, M, D, H, M, S` format, for example: `2017, 3, 29, 11, 0, 0`, for 29 March, 2017 at 11:00:00.
+	* A name for your event.
+	* The name of your timezone, in `Continent/City` format, ex. `America/New York`
+	* The date for the next party in `Y, M, D, H, M, S` format, *in the timezone of the server*, for example: `2017, 3, 29, 14, 0, 0`, for 29 March, 2017 at 14:00:00. This can take a little bit of testing.
 * Connect her to a server that you're an admin on. (It'll only work if you're an admin.) If you use the following link, after replacing `BOT_CLIENT_ID` with the client ID from the Discord developer application screen, it'll correctly set her permissions when she connects. https://discordapp.com/oauth2/authorize?client_id=BOT_CLIENT_ID&scope=bot&permissions=268504080
 	* Manage Roles (to assign the guest role)
 	* Manage Channels (to open and close the party channel and set the topic in Announcements)
@@ -46,8 +47,10 @@ This dude knows what he's doing, and his directions work perfectly.
 [Running a Node.js application using nvm as a systemd service](https://gist.github.com/joepie91/73ce30dd258296bd24af23e9c5f761aa)
 
 ## Stupid Problems
-* cron isn't implemented in this version, yet, so she can't autostart parties or announce how much time is left.
+* Autostart for events is not yet added.
+* Automatic guest roles have not been re-added.
 * She's full of hardcoded references to the Kirkwall Gazette. I'm pretty sure I haven't found all of them, yet, but they'll change to `serverName`.
+* Need to check for empty variables to keep the bot from exploding when hitting a non-critical null.
 
 ## Removing Stuff
 If you're not interested in using certain functions, I've made them easy to remove.
