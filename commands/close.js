@@ -27,6 +27,6 @@ module.exports = {
 		})
 			.then(() => console.log(momentTZ.tz(new Date(), moTZ).toString() + ': Magisters booted!'))
 			.catch(console.error);
-		return interaction.reply('This party has now reached its conclusion.');
+		return interaction.reply('Cleanup complete.');
 	},
 };

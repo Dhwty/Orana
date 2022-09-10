@@ -40,6 +40,7 @@ module.exports = {
 		const hR1 = Cron( hourOne, () => {client.channels.cache.get(channelPartyhard).send('One hour remains in the current ' + partyName + '!');});
 		const mR30 = Cron( minute30, () => {client.channels.cache.get(channelPartyhard).send('Thirty minutes remain in the current ' + partyName + '!');});
 		const mR5 = Cron( minute5, () => {client.channels.cache.get(channelPartyhard).send('Five minutes remain in the current ' + partyName + '!');});
+		const mR0 = Cron( minute5, () => {client.channels.cache.get(channelPartyhard).send('This' + partyName + 'has now reached its conclusion!');});
 
 		//Generate and set status
 		const statNum = Math.floor(Math.random() * 6);
