@@ -4,6 +4,11 @@ clicky.js
 prune.js
 options-info.js
 
+#Don't sync the fandom
+correspondence.js
+neathbow.js
+anders.txt
+
 #Don't sync le garbage
 *.zip
 *.sqlite
