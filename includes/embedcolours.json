@@ -7,5 +7,14 @@
     "peligin" : "#001A75",
     "violant" : "#D400B8",
     "viric" : "#00FF69",
-    "birthday" : "#EA586E"
+    "birthday" : "#EA586E",
+    "red" : "#FF030D",
+    "orange" : "#FF9105",
+    "yellow" : "#FCD605",
+    "green" : "#00BB00",
+    "blue" : "#0096FF",
+    "indigo" : "#4B0082",
+    "violet" : "#3300FF",
+    "cyan" : "#0FF0FE",
+    "purple" : "#BC13fE"
 }
