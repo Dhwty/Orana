@@ -1,7 +1,7 @@
 // Require the necessary discord.js classes
 const fs = require('node:fs');
 const path = require('node:path');
-const emojiCharacters = require('./emojiCharacters');
+const emojiCharacters = require('./includes/emojiCharacters');
 const momentTZ = require('moment-timezone');
 const dotenv = require('dotenv').config();
 const Discord = require('discord.js');
