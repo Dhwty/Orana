@@ -1,5 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { EmbedBuilder } = require('discord.js');
+const { sidebarDef } = require('../includes/embedcolours.json');
 const { channelAnnounce, embedIcon } = require('../config.json');
 
 module.exports = {
@@ -20,7 +21,7 @@ module.exports = {
 		const gamename = interaction.options.getString('gamename');
 
 		const embed = new EmbedBuilder()
-			.setColor(16098851)
+			.setColor(sidebarDef)
 			.setTitle('We\'re playing '+ gamename + ' on Jackbox!')
 			.setAuthor({ name: interaction.user.username, iconURL: interaction.user.displayAvatarURL({ dynamic: true }) })
 			.setDescription('This game will start in the next five minutes! Click the link below and enter the room code to join in, and then let the host know you\'re ready to play!')
