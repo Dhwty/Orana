@@ -9,7 +9,7 @@ const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const { guildId, moTZ, channelAnnounce, channelMagisterium, channelPartyhard, roleGuests, roleAdmins, partyName, partyDate } = require('./config.json');
 
 // Create a new client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.DirectMessages] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers, GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildPresences] });
 
 //Constants set, time to init.
 console.log('Preparing Orana...\nNode version: ' + process.version + '\nDiscord.js version:' + Discord.version);
