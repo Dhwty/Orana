@@ -48,6 +48,6 @@ module.exports = {
 			)
 			.setFooter({ text: 'Party on!', iconURL: embedIcon });
 
-		return interaction.reply({ embeds:[embed] });
+		return interaction.reply({ embeds:[embed], ephemeral: true });
 	},
 };
